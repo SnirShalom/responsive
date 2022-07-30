@@ -1,0 +1,78 @@
+@import url(./_reset.css);
+@import url(./_base.css);
+@import url(./_typography.css);
+/* 
+* Add your own CSS code below... 
+*/
+body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1%;
+}
+.box {
+  border-radius: 8px;
+  color: white;
+  font-size: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.blue {
+  background-color: blue;
+  height: 10%;
+}
+.orange {
+  background-color: orange;
+  height: 20%;
+}
+.green {
+  background-color: green;
+}
+
+.red-1 {
+  background-color: red;
+  height: 13%;
+}
+.red-2 {
+  background-color: red;
+  visibility: hidden;
+  position: absolute;
+}
+
+@media all and (min-width: 600px) {
+  .red-2 {
+    width: 49%;
+    height: 12%;
+    visibility: visible;
+    position: static;
+  }
+  .red-1 {
+    width: 49%;
+    height: 12%;
+  }
+}
+
+@media all and (min-width: 1400px) {
+  .blue {
+    width: 49%;
+    height: 15%;
+  }
+  .orange {
+    height: 25%;
+  }
+  .green {
+    width: 30%;
+    height: 25%;
+  }
+  .red-1 {
+    width: 23%;
+    height: 15%;
+  }
+  .red-2 {
+    width: 23%;
+    height: 15%;
+  }
+}
